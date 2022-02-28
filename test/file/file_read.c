@@ -24,6 +24,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 #include "common_test.h"
 #include "macros.h"
@@ -47,7 +48,7 @@ main(int argc,
 	(void) argv;
 
 	TEST(
-		f = qg8_file_open("file/test_write.qg8", QG8_MODE_READ);
+		f = qg8_file_open(_TESTDATA_DIR"/file_read.qg8", QG8_MODE_READ);
 		iter = qg8_file_iterator(f);
 	, f != NULL, "qg8_file_open"
 	);

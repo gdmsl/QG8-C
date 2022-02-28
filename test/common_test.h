@@ -93,5 +93,14 @@
 
 #define PASS() exit(EXIT_SUCCESS);
 
+#ifndef _TESTDATA_DIR
+#define _TESTDATA_DIR "./data"
+#endif
+
+#ifndef _OUTDATA_DIR
+#define _OUTDATA_DIR "."
+#endif
+
+
 #endif /* _RAYMENT_FR_TEST_COMMON_TEST_H */
 

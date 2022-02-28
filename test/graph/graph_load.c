@@ -45,7 +45,7 @@ main(int argc,
 	(void) argv;
 
 	TEST(
-		g = qg8_graph_load("graph/test_numpy.qg8");
+		g = qg8_graph_load(_TESTDATA_DIR"/graph_load.qg8");
 	, g != NULL, "qg8_graph_load"
 	);
 

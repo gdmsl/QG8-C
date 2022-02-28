@@ -87,7 +87,7 @@ main(int argc,
 	c2 = qg8_chunk_create(QG8_TYPE_KET, 0, (uint8_t *) "chunk2", t2);
 
 	TEST(
-		f = qg8_file_open("file/test_write.qg8", QG8_MODE_WRITE);
+		f = qg8_file_open(_OUTDATA_DIR"/test_write.qg8", QG8_MODE_WRITE);
 	, f != NULL, "qg8_file_open"
 	);
 
